@@ -14,5 +14,6 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  
+
+  return "temp password";
 }

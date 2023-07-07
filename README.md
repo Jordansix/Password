@@ -3,3 +3,4 @@ Create an application that an employee can use to generate a random password bas
 
 Wrote down temp password so we can stat writing our code within the function.
 
+Wrote down console log to see if my clickes are being implemented. 

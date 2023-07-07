@@ -14,43 +14,11 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
+  console.log("Hey!, you clicked the button!")
+  
 
 
 
 
   return "temp password";
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
 }

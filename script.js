@@ -29,23 +29,24 @@ function generatePassword() {
 }
 
 // Prompts
-function getPrompts() {
+function getPrompts(){
   characterLength = parsetInt(prompt("How many characters do you want? (8 - 128 characters"));
 
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert("Character length has to be a numberArry, 8 -128 DOMStringList. please try again.");
     return false;
   }
- if (confirm("Would yo like lowercase letters in your password?")) {
+ if (confirm("Would you like lowercase letters in your password?")) {
     choiceArr = choiceArr.concat(lowercaseArry);
  }
- if (confirm("Would yo like uppercase letters in your password?")) {
+ if (confirm("Would you like uppercase letters in your password?")) {
    choiceArr = choiceArr.concat(uppercaseAry);
  }
- if (confirm("Would yo like special characters in your password?")) {
-  choiceArr = choiceArr.concat(speacialCharArry);
+ if (confirm("Would you like special characters in your password?")) {
+   choiceArr = choiceArr.concat(speacialCharArry);
  }
- if (confirm("Would yo like numbers in your password?")) {
-  choiceArr = choiceArr.concat(numberArry);
+ if (confirm("Would you like numbers in your password?")) {
+   choiceArr = choiceArr.concat(numberArry);
  }  
  return true;
 }  

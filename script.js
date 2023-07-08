@@ -30,7 +30,7 @@ var characterLength = 8;
 function generatePassword() { 
   var password = "";
   for (var i = 0; i < characterLength; i++) {
-    var randomLetter = math.floor(Math.random() * choiceArr.length);
+    var randomLetter = Math.floor(Math.random() * choiceArr.length);
     password = password + choiceArr[randomLetter];
   }
   return password;

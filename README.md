@@ -17,3 +17,4 @@ realized I had 2 of the ame password words so I changed it to setpassword and th
 
 Wrote the password text so I can actually show when we are done filling out the prompts.
 
+Adding changes to my syntaxs cause I am finding bugs.

@@ -5,5 +5,5 @@ Wrote down temp password so we can stat writing our code within the function.
 
 Wrote down console log to see if my clickes are being implemented. 
 
-Made the prompts to true or false.
+Made the prompts so the user can be presented to them.
 

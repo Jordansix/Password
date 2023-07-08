@@ -25,12 +25,12 @@ var characterLength = 8;
  var numberArry = ['1','2','3','4','5','6','7','8','9','0'];
    
 function generatePassword() { 
-  return "temp password";
+  
 }
 
 // Prompts
 function getPrompts(){
-  characterLength = parsetInt(prompt("How many characters do you want? (8 - 128 characters"));
+  characterLength = parseInt(prompt("How many characters do you want? (8 - 128 characters")); //NaN
 
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("Character length has to be a numberArry, 8 -128 DOMStringList. please try again.");
@@ -40,13 +40,13 @@ function getPrompts(){
     choiceArr = choiceArr.concat(lowercaseArry);
  }
  if (confirm("Would you like uppercase letters in your password?")) {
-   choiceArr = choiceArr.concat(uppercaseAry);
+    choiceArr = choiceArr.concat(uppercaseAry);
  }
  if (confirm("Would you like special characters in your password?")) {
-   choiceArr = choiceArr.concat(speacialCharArry);
+    choiceArr = choiceArr.concat(speacialCharArry);
  }
  if (confirm("Would you like numbers in your password?")) {
-   choiceArr = choiceArr.concat(numberArry);
+    choiceArr = choiceArr.concat(numberArry);
  }  
  return true;
 }  

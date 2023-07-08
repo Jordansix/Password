@@ -7,12 +7,14 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
   var correctPrompts  = getPrompts(); //return true or false 
+  var passwordText = document.querySelector("#password");
 
   if(correctPrompts) {
    var setpassword = generatePassword();
-   var passwordText = document.querySelector("#password");
    passwordText.value = setpassword;
-  } 
+  } else {
+    passwordTest.value = "";
+  }
 }
 
 // password length 8 < 128

@@ -15,3 +15,5 @@ For loop is done now whatever it ends up with it will return it to the user.
 
 realized I had 2 of the ame password words so I changed it to setpassword and the other is left the same as password.
 
+Wrote the password text so I can actually show when we are done filling out the prompts.
+

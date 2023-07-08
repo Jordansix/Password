@@ -3,11 +3,13 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var correctPrompts  = getPrompts(); //return true or false 
 
-  passwordText.value = password;
-
+  if(correctPrompts) {
+   var setpassword = generatePassword();
+   var passwordText = document.querySelector("#password");
+   passwordText.value = setpassword;
+  } 
 }
 
 // Add event listener to generate button
@@ -25,7 +27,12 @@ var characterLength = 8;
  var numberArry = ['1','2','3','4','5','6','7','8','9','0'];
    
 function generatePassword() { 
-  
+  var password = "";
+  for (var i = 0; i < characterLength; i++) {
+    var randomLetter = math.floor(Math.random() * choiceArr.length);
+    password = password + choiceArr[randomLetter];
+  }
+  return password;
 }
 
 // Prompts
@@ -50,3 +57,4 @@ function getPrompts(){
  }  
  return true;
 }  
+
